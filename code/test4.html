@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+
+  div{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+  }
+</style>
+</head>
+<body>
+ <section>
+<ul>
+  <li>
+    <img src="./link/work-1.jpg" alt="">
+    <div></div><div></div>
+  </li>
+  <li>123<img src="./link/work-2.jpg" alt=""><div></div><div></div></li>
+  <li>456<img src="./link/work-3.jpg" alt=""><div></div><div></div></li>
+  <li>789<img src="./link/work-4.jpg" alt=""><div></div><div></div></li>
+</ul>
+</section> 
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>
+$('section>ul>li>img:even').css('color','red').css('border','10px solid blue').css('border','10px solid blue')
+$('section>ul>li>img:odd').css('color','green').css('border','10px solid green').css('border','10px solid green')
+
+
+</script>
+        
+
+
+</body>
+
+
+
+</html>

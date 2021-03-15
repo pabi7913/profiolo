@@ -1,0 +1,144 @@
+.opening{
+    width:80vw;
+    height:100vh;
+    position:relative;
+    animation-name: opening;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    margin:0 auto;
+}
+
+@keyframes opening {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+        height:100vh;
+    }
+
+    100% {
+        opacity: 0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+.opening>.logo-group{
+    position: absolute;
+    width:500px;
+    top:5%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    .opening>.logo-group{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .opening>.logo-group{
+        width:300px;
+    }
+}
+
+.opening>.logo-group>.logo{
+    width:300px;
+    top:20%;
+    left:50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+    .opening>.logo-group>.logo{
+transform: scale(.6);
+top:35%;
+left:25%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .opening>.logo-group>.logo{
+        transform: scale(.3);
+top:50%;
+left:10%;
+    }
+}
+
+
+.opening>.logo-group>.logo>svg {
+height: 100vh;
+}
+.opening>.logo-group>.logo>.svg2, .opening>.logo-group>.logo>.svg3{
+    top:100px;
+}
+.opening>.logo-group>.logo>svg>path {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 0;
+    animation-name: logo-line-appear;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    fill: none;
+    stroke: rgb(195, 110, 130);
+    stroke-width: 75;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    opacity: 0;
+}
+@keyframes logo-line-appear {
+    from {
+        opacity: 0;
+        stroke-dashoffset: 300;
+    }
+
+    to {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.opening>.logo-group>.title{
+    position: absolute;
+    width:400px;
+    top:90%;
+    animation-delay: 1.5s;
+    z-index: 2;
+}
+@media screen and (max-width: 768px) {
+    .opening>.logo-group>.title{
+        width:300px;
+        left: 15%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .opening>.logo-group>.title{
+        width:200px;
+        left: 20%;
+        top:85%;
+        
+    }
+}
+
+.opening>.logo-group>.background{
+    margin-top: 30px;
+    animation-duration: .5s;
+    animation-delay: .5s;
+
+}
+@media screen and (max-width: 768px) {
+    .opening>.logo-group>.background{
+transform: scale(.75);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .opening>.logo-group>.background{
+        margin-top: 50px;
+        transform: scale(.6);
+    }
+}

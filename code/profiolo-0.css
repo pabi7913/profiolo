@@ -1,0 +1,526 @@
+        /* 0~ */   
+        /* ~0 */
+        /* 1~       */
+        /* header */
+        /* .s0 */
+        /* s1-banner */
+        .s1>.banner-iphone{
+display: none;
+        }
+
+        .s1>.banner {
+            max-width: 1000px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .s1>.banner>.img-group{
+            width: 4000px;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            transition: .5s;
+            animation-name: carousel;
+            animation-delay: 2s;
+            animation-duration: 9s;
+            animation-iteration-count:infinite;
+            animation-fill-mode: forwards;
+        }
+
+
+
+        @keyframes carousel {
+            0% {transform: translateX(0)
+            }
+        
+            30% {
+                transform: translateX(0);
+            }
+            33% {
+                transform: translateX(-1000px);
+            }
+            63% {
+                transform: translateX(-1000px);
+            }
+            66% {
+                transform: translateX(-2000px)
+            }
+            96% {
+                transform: translateX(-2000px)
+            }
+
+            100% {
+                transform: translateX(-3000px);
+            }
+        }
+
+        .s1>.banner>{
+width:100%;
+margin: 0 auto;
+        }
+
+        .s1>.banner>.img-group>img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            /* 圖片置中 */
+            /* display: block; */
+            /* margin: auto; */
+        }
+
+        .s1>.banner>ul{
+            position: absolute;
+            top:90%;
+            left:50%;
+            transform: translateX(-50%);
+        }
+
+        .s1>.banner>ul>li{
+            background-color:white;
+            border-radius: 50%;
+            width: 10px;
+            height:10px;
+            margin-left:15px;
+            margin-right:15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+                    }
+        
+
+        /* .s2-service */
+        
+        .s2>ul {
+            margin-top: 50px;
+        }
+        
+        .s2>ul>li>.s2-icon {
+            margin-top: 30px;
+            font-size: 6rem;
+            color: rgb(245, 160, 180);
+            animation-name: rainbow;
+            animation-delay: 6s;
+            animation-duration: 7s;
+            animation-iteration-count:infinite;
+            animation-fill-mode: forwards;
+            transition:.25s;
+        }
+
+
+        @keyframes rainbow {
+            0% {
+                color:rgb(245, 160, 180);
+            }
+
+            14% {
+                color:rgb(247, 215, 126);
+            }
+            28% {
+                color:rgb(244, 249, 147);
+            }
+            42% {
+                color:rgb(141, 248, 168);
+            }
+            56% {
+                color:rgb(149, 250, 237);
+            }
+            70% {
+                color:rgb(158, 188, 252);
+            }
+            84% {
+                color:rgb(215, 159, 250);
+            }
+
+            100% {
+                color:rgb(245, 160, 180);
+            }
+        }
+
+        
+        .s2>ul>li>.content {
+            margin-top: 30px;
+            max-width: 400px;
+            min-width: 350px;
+            padding: 0 20px;
+            white-space: normal;
+            text-align: justify;
+        }
+        /* .s3-works */
+        
+        .s3>ul>li {
+            max-width: 300px;
+            max-height: 270px;
+            margin: 50px 35px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            background-color:rgb(0, 0, 0); 
+            /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%); */
+            /* position: relative; */
+            transition: .25s;
+            overflow: hidden;
+        }
+
+        .s3>ul>li:hover{
+            border-radius: 3rem;
+        }
+
+        .s3>ul>li>a{
+        }
+
+        .s3>ul>li>.title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border-top:.25px solid white; */
+            /* border-bottom: .25px solid white; */
+            position: absolute;
+            width:100%;
+            height:50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        
+            z-index: 4;
+            padding: 2.5px 0;
+            opacity: 0;
+            /* background-color: white; */
+            /* 裝飾線 */
+            /* background-clip:content-box; */
+            /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); */
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 100;
+            letter-spacing: .2rem;
+            color:white;
+            transition: .5s;
+        }
+
+        .s3>ul>li>a>img {
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+            object-position: 0 0;
+        }
+        
+        /* .s4-blog */
+        
+        .s4>ul>li {
+            max-width: 300px;
+            min-width: 200px;
+            height: 100%;
+            margin: 50px 35px;
+        }
+        
+        .s4>ul>li>img {
+            width: 100%;
+            height: 100%;
+            border: .25px solid #bbb;
+            object-fit: cover;
+            object-position: 0 0;
+        }
+        
+        .s4>ul>li>.content {
+            margin-top: 15px;
+            max-width: 300px;
+            min-width: 200px;
+            white-space: normal;
+            text-overflow: ellipsis;
+        }
+        
+        .s4>ul>li>.button {
+            margin-top: 20px;
+            text-align: right;
+        }
+        
+        .s4>ul>li>.button>a {
+            color: #555;
+            font-size: 1.25rem;
+            width: 40px;
+            height: 20px;
+            background-color: #eee;
+            padding: 8px;
+            letter-spacing: .1rem;
+            transition: .25s;
+        }
+        
+        .s4>ul>li>.button>a:hover {
+            color: white;
+            background-color: rgb(195, 110, 130);
+            border-radius: .75rem;
+        }
+
+
+        
+        /* footer */
+        
+        /* ~1 */
+
+        @media screen and (max-width: 768px) {
+            /* 0~ */
+            /* ~0 */
+            /* 1~       */
+            /* header */
+            /* .s0 */
+
+            /* s1-banner */
+            .s1>.banner {
+                max-width: 768px;
+                height: 450px;
+                margin: 0 auto;
+            }
+            .s1>.banner>.img-group{
+                width: 3600px;
+            }
+    
+            @keyframes carousel {
+                0% {transform: translateX(0)
+                }
+            
+                30% {
+                    transform: translateX(0);
+                }
+                33% {
+                    transform: translateX(-900px);
+                }
+                63% {
+                    transform: translateX(-900px);
+                }
+                66% {
+                    transform: translateX(-1800px)
+                }
+                96% {
+                    transform: translateX(-1800px)
+                }
+    
+                100% {
+                    transform: translateX(-2700px);
+                }
+            }
+    
+
+            /* .s2-service */
+            .s2>ul {
+                /* padding:0 30px; */
+                margin-top: 50px;
+
+            }
+            .s2>ul>li>.s2-icon {
+                margin-top: 30px;
+                font-size: 5rem;
+
+            }
+
+            .s2>ul>li>.content {
+                margin-top: 30px;
+                max-width: 300px;
+                min-width: 200px;
+                padding: 0 20px;
+                white-space: normal;
+                text-align: justify;
+            }
+
+            /* .s3-works */
+            .s3>ul>li {
+                margin: 40px 30px;
+            }
+
+            /* .s4-blog */
+            .s4>ul>li {
+                max-width: 300px;
+                min-width: 180px;
+                height: 100%;
+                margin: 40px 30px;
+            }
+            .s4>ul>li>img {
+                width: 100%;
+                height: 100%;
+                border: .25px solid #bbb;
+                object-fit: cover;
+                object-position: 0 0;
+            }
+            .s4>ul>li>.content {
+                margin-top: 15px;
+                max-width: 300px;
+                min-width: 180px;
+                white-space: normal;
+                text-overflow: ellipsis;
+            }
+            .s4>ul>li>.button {
+                margin-top: 20px;
+                text-align: right;
+            }
+            .s4>ul>li>.button>a {
+                color: #555;
+                font-size: 1.25rem;
+                width: 40px;
+                height: 20px;
+                background-color: #eee;
+                padding: 8px;
+                letter-spacing: .1rem;
+                transition: .25s;
+            }
+            .s4>ul>li>.button>a:hover {
+                color: white;
+                background-color: rgb(195, 110, 130);
+                border-radius: .75rem;
+            }
+            /* footer */
+
+            /* ~1 */
+        }
+
+        @media screen and (max-width: 576px) {
+            /* 1~       */
+            /* s1-banner */
+
+            .s1>.banner{
+                display: none;
+                        }
+                        .s1>.banner-iphone{
+                            display:block;
+                                    }
+                        .s1>.banner-iphone {
+                            max-width: 576px;
+                            height: 600px;
+                            overflow: hidden;
+                            position: relative;
+                            margin: 0 auto;
+                        }
+                        
+                        .s1>.banner-iphone>.img-group{
+                            width: 2000px;
+                            height: 100%;
+                            position: absolute;
+                            left: 0px;
+                            transition: .5s;
+                            animation-name: carousel;
+                            animation-delay: 2s;
+                            animation-duration: 9s;
+                            animation-iteration-count:infinite;
+                            animation-fill-mode: forwards;
+                        }
+                
+                        @keyframes carousel {
+                            0% {transform: translateX(0)
+                            }
+                        
+                            30% {
+                                transform: translateX(0);
+                            }
+                            33% {
+                                transform: translateX(-500px);
+                            }
+                            63% {
+                                transform: translateX(-500px);
+                            }
+                            66% {
+                                transform: translateX(-1000px)
+                            }
+                            96% {
+                                transform: translateX(-1000px)
+                            }
+                
+                            100% {
+                                transform: translateX(-1500px);
+                            }
+                        }
+                
+                        .s1>.banner-iphone>.img-group>img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: contain;
+                            /* 圖片置中 */
+                            /* display: block; */
+                            /* margin: auto; */
+                        }
+                        .s1>.banner-iphone>ul{
+                            position: absolute;
+                            top:90%;
+                            left:50%;
+                            transform: translateX(-50%);
+                        }
+                
+                        .s1>.banner-iphone>ul>li{
+                            background-color:white;
+                            border-radius: 50%;
+                            width: 10px;
+                            height:10px;
+                            margin-left:15px;
+                            margin-right:15px;
+                            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+                                    }
+            /* .s2-service */
+            .s2>ul {
+                margin-top: 30px;
+            }
+            .s2>ul>li>.s2-icon {
+                margin-top: 10px;
+                font-size: 4rem;
+            }
+            .s2>ul>li>.content {
+                margin-top: 5px;
+                margin-bottom: 50px;
+                max-width: 576px;
+                padding: 0 40px;
+                white-space: normal;
+                text-align: justify;
+            }
+            /* .s3-works */
+            .s3>ul {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .s3>ul>li {
+                max-width: 450px;
+                min-width: 300px;
+                max-height: 405px;
+                min-height: 270px;
+                margin: 40px 30px;
+            }
+
+            /* .s4-blog */
+            .s4>ul>li {
+                max-width: 450px;
+                min-width: 300px;
+                /* max-height: 405px; */
+                /* min-height: 270px; */
+                height: 100%;
+                margin: 40px 30px;
+            }
+            .s4>ul>li>img {
+                width: 100%;
+                height: 100%;
+                border: .25px solid #bbb;
+                object-fit: cover;
+                object-position: 0 0;
+            }
+            .s4>ul>li>.content {
+                margin-top: 15px;
+                max-width: 400px;
+                min-width: 180px;
+                white-space: normal;
+                text-overflow: ellipsis;
+            }
+            .s4>ul>li>.button {
+                margin-top: 20px;
+                text-align: right;
+            }
+            .s4>ul>li>.button>a {
+                color: #555;
+                font-size: 1.5rem;
+                width: 50px;
+                height: 30px;
+                background-color: #eee;
+                padding: 8px;
+                letter-spacing: .1rem;
+                transition: .25s;
+            }
+            .s4>ul>li>.button>a:hover {
+                color: white;
+                background-color: rgb(195, 110, 130);
+                border-radius: .75rem;
+            }
+            /* footer */
+
+            /* ~1 */
+        }   

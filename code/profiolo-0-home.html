@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profiolo-0-home</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <!-- font用link置入較不佔讀取速度 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- 外部置入css -->
+    <link rel=stylesheet type="text/css" href="normalize.css">
+    <link rel=stylesheet type="text/css" href="profiolo.css">
+    <link rel=stylesheet type="text/css" href="profiolo-0-opening.css">
+    <link rel=stylesheet type="text/css" href="profiolo-0.css">
+</head>
+
+<body>
+    <canvas id="canvas" width="100vw" height="100vh"></canvas>
+    <!-- 開頭動畫 -->
+    <div class="opening">
+        <div class="logo-group">
+            <!-- logo -->
+            <div class="logo" style="z-index: 3;position: absolute;">
+                <!-- 3 -->
+                <svg version="1.1" class='svg3' style="z-index: 5;position: absolute;">
+                    <path d="M38,38,38,228" class="path3"></path>
+                </svg>
+                <!-- 2 -->
+                <svg version="1.1" class='svg2' style="z-index: 4;position: absolute;">
+                    <path d="M230,38c0,53-43,96-96,96S38,91,38,38" class="path2"></path>
+                </svg>
+                <!-- 1 -->
+                <svg version="1.1" class='svg1' style="z-index: 3;position: absolute;">
+                    <path d="M38,134a96,96,0,0,1,192,0" class="path1"></path>
+                </svg>
+            </div>
+            <!-- title -->
+            <div class="title animate__animated animate__bounceIn"><img src="./link/opening-logo.svg" alt=""></div>
+            <!-- bg -->
+            <div class="background animate__animated animate__fadeIn"><img src="./link/opening-background.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- s0 -->
+    <header>
+        <section class='s0 d-flex justify-content-between align-items-end'>
+            <!-- logo -->
+            <div class='logo'>
+                <a href="./profiolo-0-home.html"><img src="./link/logo-PABI SPACE.svg" alt=""></a>
+            </div>
+            <!-- iconx2 -->
+            <div class='icon'>
+                <a href="https://www.instagram.com/pabika0103/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/pabipabi"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </section>
+
+        <nav>
+            <ul class='d-flex justify-content-end'>
+                <a href="./profiolo-1-about.html">
+                    <li>About</li>
+                </a>
+                <a href="./profiolo-2-works.html">
+                    <li>Works</li>
+                </a>
+                <a href="./profiolo-3-blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="./profiolo-4-contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+        <!-- iphone版nav -->
+        <nav class='nav-iphone'>
+            <ul class='d-flex justify-content-center flex-wrap'>
+                <a href="./profiolo-1-about.html" class='col-6'>
+                    <li>About</li>
+                </a>
+                <a href="./profiolo-2-works.html" class='col-6'>
+                    <li>Works</li>
+                </a>
+                <a href="./profiolo-3-blog.html" class='col-6'>
+                    <li>Blog</li>
+                </a>
+                <a href="./profiolo-4-contact.html" class='col-6'>
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+        <div class='icon-iphone'>
+            <a href="https://www.instagram.com/pabika0103/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/pabipabi"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </header>
+
+    <section class='s1'>
+        <!--輪播牆 -->
+        <div class='banner'>
+            <div class="img-group d-flex flex-nowrap">
+                <img src="./link/banner-a.jpg" alt="">
+                <img src="./link/banner-b.jpg" alt="">
+                <img src="./link/banner-c.jpg" alt="">
+                <img src="./link/banner-a.jpg" alt="">
+            </div>
+            <ul class='d-flex'>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!--iphone版的banner-->
+        <div class='banner-iphone'>
+            <div class="img-group d-flex flex-nowrap">
+                <img src="./link/banner-a-s.jpg" alt="">
+                <img src="./link/banner-b-s.jpg" alt="">
+                <img src="./link/banner-c-s.jpg" alt="">
+                <img src="./link/banner-a-s.jpg" alt="">
+            </div>
+            <ul class='d-flex'>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </section>
+
+    <section class='s2'>
+        <h1 class='text-center'>Service</h1>
+        <ul class='d-flex text-center justify-content-around flex-column flex-sm-row '>
+            <!-- design -->
+            <li>
+                <h2>DESIGN</h2>
+                <h3>美術設計</h3>
+                <div class='s2-icon'><i class="fas fa-pen-fancy"></i></div>
+                <div class='content'>
+                    以客戶需求為出發點，尋找合適的素材製作各種風格的設計。期許自己能達到不用解釋的設計，並讓人留下印象，會心的一笑，並要求自己比上次更好。<br>熟悉軟體為Photoshop、Illustrator、InDesign、XD，對排版有執著，對齊一致性是基本。對色彩有感情，喜歡colorful的事物，希望為這世界多添一點色彩。
+                </div>
+            </li>
+            <!-- coding -->
+            <li>
+                <h2>CODING</h2>
+                <h3>程式編碼</h3>
+                <div class='s2-icon'><i class="fas fa-file-code"></i></div>
+                <div class='content'>
+                    因應無紙化來臨，希望透過網頁互動，將作品更快速且精準的傳達，並作出相應的互動體驗介面，與使用者建立更深層的交互關係。<br>運用技術及程式有Html5, CSS3, VS Code, Jquery,
+                    Bootstrap。不喜歡看書，卻很喜歡看工具書，平時喜歡自學新的知識及技巧，遇到問題總是想辦法要解決不然會睡不著覺。
+                </div>
+            </li>
+            <!-- direction -->
+            <li>
+                <h2>DIRECTION</h2>
+                <h3>溝通協調</h3>
+                <div class='s2-icon'><i class="fas fa-handshake"></i></div>
+                <div class='content'>
+                    「耐心」是因為想讓案件順利執行，會仔細聆聽所有需求，並盡力達成目標。「細心」是因為不想重複做一樣的是，會一次做到好，並標示清楚，以便備查。「同理心」是因為從事過服務業，會希望所有客戶都能得到好的對待。<br>並以早餐店阿姨為榜樣，會記錄所有客戶的喜好及地雷，希望讓所有人都滿意。
+
+                </div>
+            </li>
+        </ul>
+
+
+    </section>
+
+    <section class='s3'>
+        <h1 class='text-center'>Works</h1>
+        <ul class='d-flex flex-wrap flex-column flex-sm-row justify-content-center align-items-center'>
+            <li class='col-3'>
+                <div class='title'>Animation</div>
+                <a href=""><img src="./link/work-1.gif" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Publication</div>
+                <a href=""><img src="./link/work-2.jpg" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Annual <br> Report</div>
+                <a href=""><img src="./link/work-3.jpg" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Publication</div>
+                <a href=""><img src="./link/work-4.jpg" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Animation</div>
+                <a href=""><img src="./link/work-5.gif" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Publication</div>
+                <a href=""><img src="./link/work-6.jpg" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Annual <br> Report</div>
+                <a href=""><img src="./link/work-7.jpg" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Calender</div>
+                <a href=""><img src="./link/work-8.jpg" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Animation</div>
+                <a href=""><img src="./link/work-9.gif" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Annual <br> Report</div>
+                <a href=""><img src="./link/work-10.jpg" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>Annual <br> Report</div>
+                <a href=""><img src="./link/work-11.jpg" alt=""></a>
+            </li>
+            <li class='col-3'>
+                <div class='title'>CSR</div>
+                <a href=""><img src="./link/work-12.jpg" alt=""></a>
+
+        </ul>
+    </section>
+
+    <section class='s4 '>
+        <h1 class='text-center '>Blog</h1>
+        <ul
+            class='d-flex flex-wrap flex-column flex-md-row justify-content-center align-items-center align-items-md-start'>
+            <li class='col-3'>
+                <img src="./link/blog-1.jpg" alt="">
+                <div class='content'>
+                    墾丁最熱的時候，就是現在。每天都是大晴天，照片怎麼拍都超級亮～看著藍天白雲，心情感到無比舒暢，大家都說去墾丁就像去國外一樣，真的是這樣。這個民宿擁有最好的位置，在這裡的每一天，都可以看到絕美的日出和日落。想要下水，過個馬路走路五分鐘就可以到沙灘準備跳海。
+                </div>
+                <div class='button '><a href="">more</a></div>
+            </li>
+            <li class='col-3'>
+                <img src="./link/blog-2.jpg" alt="">
+                <div class='content '>我的生命中出現了一位小可愛，她是多多！目前2個月大，還在適應新環境！希望他能健康順順利利快快樂樂長大～</div>
+                <div class='button '><a href="./profiolo-3-blog-1.html">more</a></div>
+            </li>
+            <li class='col-3'>
+                <img src="./link/blog-3.jpg" alt="">
+                <div class='content '>多多 in 0y3m，開始調皮搗蛋，但玩完玩具會自動放回小沙發，目前玩具應該夠了吧，接下來要學習撿球和丟球～</div>
+                <div class='button '><a href="./profiolo-3-blog-1.html">more</a></div>
+            </li>
+            <li class='col-3'>
+                <img src="./link/blog-4.jpg" alt="">
+                <div class='content '>多多 in 0y4m，訓練多多在陽台上廁所，試了好久終於成功了！本來都只會在尿陪睡覺的多多，漸漸聽得懂指令了。</div>
+                <div class='button '><a href="./profiolo-3-blog-1.html">more</a></div>
+            </li>
+            <li class='col-3'>
+                <img src="./link/blog-5.jpg" alt="">
+                <div class='content '>多多 in 0y6m，為了解決社交障礙，進行半日安親，多多玩到太忘我，還好其他狗狗不計較，結束後居然還有聯絡簿可以看！</div>
+                <div class='button '><a href="./profiolo-3-blog-1.html">more</a></div>
+            </li>
+            <li class='col-3'>
+                <img src="./link/blog-6.jpg" alt="">
+                <div class='content '>多多 in 0y8m，趁著好天氣帶多多去花園走走，她開啟了狩獵模式，嘴裡一隻一隻的蝴蝶，希望吃下去不會生病。</div>
+                <div class='button '><a href="./profiolo-3-blog-1.html">more</a></div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class='footer-icon '><i class="fas fa-angle-double-up"></i></div>
+        <nav class='nav-iphone'>
+            <ul class='d-flex justify-content-center flex-wrap'>
+                <a href="./profiolo-1-about.html" class='col-6'>
+                    <li>About</li>
+                </a>
+                <a href="./profiolo-2-works.html" class='col-6'>
+                    <li>Works</li>
+                </a>
+                <a href="./profiolo-3-blog.html" class='col-6'>
+                    <li>Blog</li>
+                </a>
+                <a href="./profiolo-4-contact.html" class='col-6'>
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
+        <div
+            class='d-flex flex-wrap justify-content-md-between align-items-center align-items-md-baseline flex-column flex-md-row mt-md-3'>
+            <nav>
+                <ul class='d-flex justify-content-start'>
+                    <a href="./profiolo-1-about.html">
+                        <li class='ml-0 mr-5'>About</li>
+                    </a>
+                    <a href="./profiolo-2-works.html">
+                        <li class='ml-0 mr-5'>Works</li>
+                    </a>
+                    <a href="./profiolo-3-blog.html">
+                        <li class='ml-0 mr-5'>Blog</li>
+                    </a>
+                    <a href="./profiolo-4-contact.html">
+                        <li class='ml-0 mr-5'>Contact</li>
+
+                    </a>
+                </ul>
+            </nav>
+            <div class='content text-right '>© Pabika All rights reserved.</div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src='./profiolo.js'></script>
+    <script src='./background-anime.js'></script>
+
+
+</body>
+
+</html>

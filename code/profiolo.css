@@ -1,0 +1,396 @@
+/* web */
+/* 0~ */
+html {
+    /* 預設10之後用rem */
+    
+}
+body {
+    /* 字體要放在body不要放在html */
+    font-size: 10px;
+    font-family: 'Quicksand', sans-serif,'Noto Sans TC';
+    /* 長度改成百分比，捲軸捲動的時候才會全部出現 */
+    /* width: 80%; */
+    /* margin: 0 auto; */
+}
+
+/*  置入canvas背景 css style+.js*/
+canvas{
+/*保持不被滑動 */
+position: fixed;
+/* 手機版要比這個再但不然字會被干擾！ */
+opacity: .15;
+top:0px;
+/* 這個一定要加，不然下層東西會點不到！ */
+z-index: -1;
+/* 設高寬為整個螢幕尺寸 */
+/* width:100vw;height:100vh; */
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a,
+li {
+    color: #555;
+    white-space: nowrap;
+}
+li.col-3 {
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+h1,h2,
+.content,table  {
+    color: #555;
+}
+
+.paused{
+    animation-play-state:paused;
+}
+
+.infinite{
+    animation-iteration-count:infinite;
+}
+
+.time-05s{
+    animation-duration: .5s;
+}
+
+.time-03s{
+    animation-duration: .3s;
+}
+
+.time-025s{
+    animation-duration: .25s;
+}
+
+.delay-025s{
+    animation-delay: .25s;
+}
+.delay-05s{
+    animation-delay: .5s;
+}
+.delay-075s{
+    animation-delay: .75s;
+}
+.delay-1s{
+    animation-delay: 1s;
+}
+.delay-125s{
+    animation-delay: 1.25s;
+}
+
+.delay-15s{
+    animation-delay: 1.5s;
+}
+.delay-2s{
+    animation-delay: 2s;
+}
+/* ~0 */
+
+/* 1~ */
+h1 {
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: .3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+}
+
+h3 {
+    margin-top: 7.5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .15rem;
+    color: #bbb;
+}
+
+.content {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 3rem;
+    white-space: normal;
+    text-align: justify;
+}
+.content-b{
+    font-weight: 600;
+    white-space: nowrap;
+}
+/* header */
+header{
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding:0 20px;
+}
+header>.s0>.logo>a>img {
+    width: 300px;
+}
+header>.s0>.icon>a {
+    font-size: 2.25rem;
+    margin-left: 30px;
+}
+header>.s0>.icon>a>i {
+    transition: .25s;
+}
+/* header>.s0>.icon>a>i:hover {
+    color: rgb(195, 110, 130);
+} */
+
+/* nav */
+.nav-iphone,
+.icon-iphone {
+    display: none;
+}
+nav>ul {
+    margin-top: 100px;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+nav>ul>a>li {
+    transition: .25s;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    margin-left: 50px;
+}
+/* nav>ul>a>li:hover {
+    color: rgb(195, 110, 130);
+} */
+
+/* section */
+.s1{
+    width:100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.s2 {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.s3 {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.s4 {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* footer */
+footer {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding:0 20px;
+}
+footer>.footer-icon {
+    text-align: center;
+    margin-top: 100px;
+}
+footer>.footer-icon>i:hover {
+    color: rgb(195, 110, 130);
+}
+footer>.footer-icon>i {
+    transition: .25s;
+    font-size: 3rem;
+    color: #bbb;
+}
+footer>div {
+    margin-top: 100px;
+}
+
+footer>div>nav>ul {
+    margin-top: 0;
+}
+footer>div>.content {
+    font-size: 1.25rem;
+    margin-top: 50px;
+}
+/* ~1 */
+
+/* ipad */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        margin-top: 5px;
+        font-size: 1.25rem;
+    }
+    .content {}
+
+    /* header */
+    header{
+        width: 90%;
+    }
+    header>.s0>.icon>a {
+        font-size: 2.5rem;
+    }
+
+    /* section */
+    .s1{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+    }
+    .s2 {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .s3 {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .s4 {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    /* footer */
+    footer {
+        width: 90%;
+        margin-bottom: 75px;
+    }
+    footer>.footer-icon {
+        margin-top: 75px;
+    }
+}
+
+/* iphone */
+canvas{
+    /* opacity: .5; */
+    }
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+    h3{
+        margin-top: 7.5px;
+        font-size: 1.5rem;
+    }
+    .content {
+        font-size: 1.35rem;
+        font-weight: 400;
+        line-height: 2.85rem;
+    }    
+    /* header */
+    header{
+        width: 100%;
+        margin-top: 20px;
+        padding:0;
+    }
+
+    header>.s0>.logo{
+        width: 200px;
+        margin:0 auto;
+    }
+
+
+    header>.s0>.logo>a>img {
+        width: 100%;
+        /* margin-left: 25px; */
+
+    }
+    
+    header>.icon-iphone {
+        margin-top: 20px;
+        text-align: center;
+    }
+    header>.icon-iphone>a {
+        font-size: 3rem;
+        margin: 0 15px;
+    }
+    header>.icon-iphone>a>i {
+        transition: .25s;
+    }
+    header>.icon-iphone>a>i:hover {
+        color: rgb(195, 110, 130);
+    }
+    
+    /* nav */
+    nav,
+    .icon {
+        display: none;
+    }
+    .nav-iphone,
+    .icon-iphone {
+        display: block;
+    }
+    .nav-iphone>ul {
+        margin-top: 20px;
+    }
+    .nav-iphone>ul>a {
+        border: .1px solid #eee;
+    }
+    .nav-iphone>ul>a>li {
+        font-size: 1.25px;
+        margin: 15px;
+        text-align: center;
+    }
+    /* section */
+    .s1,.s2,.s3,.s4{
+    width: 100%;
+    margin: 0 auto;
+    }
+
+
+    .s1 {
+        margin-top: 50px;  
+    }
+
+    .s2 {
+        margin-top: 30px;  
+    }
+
+    .s3{
+        margin-top: 50px;
+    }
+
+    .s4 {
+        margin-top: 75px;
+    }
+
+    footer {
+        margin-top:100px;
+        width: 100%;
+        margin-bottom: 10px;
+        padding:0;
+    }
+    footer>.footer-icon {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    footer>div {
+        margin-top: 50px;
+    }
+    footer>div>.content {
+        margin-top: 0;
+    }
+
+}
